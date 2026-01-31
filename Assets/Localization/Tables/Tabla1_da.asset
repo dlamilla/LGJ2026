@@ -19,31 +19,31 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 3399619076096
-    m_Localized: Tsiniti
+    m_Localized: tsiniti
     m_Metadata:
       m_Items: []
   - m_Id: 3399677796352
-    m_Localized: Baibo
+    m_Localized: baibo
     m_Metadata:
       m_Items: []
   - m_Id: 3399681990656
-    m_Localized: cr
+    m_Localized: jaton akabo
     m_Metadata:
       m_Items: []
   - m_Id: 3399681990657
-    m_Localized: Pikoti
+    m_Localized: pikoti
     m_Metadata:
       m_Items: []
   - m_Id: 16480269131776
-    m_Localized: re
+    m_Localized: vaniti
     m_Metadata:
       m_Items: []
   - m_Id: 16480269131777
-    m_Localized: vo
+    m_Localized: jeeya
     m_Metadata:
       m_Items: []
   - m_Id: 16480269131778
-    m_Localized: le
+    m_Localized: joibo
     m_Metadata:
       m_Items: []
   - m_Id: 16480269131779

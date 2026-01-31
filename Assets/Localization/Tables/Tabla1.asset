@@ -33,7 +33,7 @@ MonoBehaviour:
         - rid: 1106481036483100950
         - rid: 1106481036483100955
         m_ConnectedFile: "C:/Users/lamil/Downloads/Hoja de c\xE1lculo sin t\xEDtulo
-          - Hoja 1 (1).csv"
+          - Hoja 1 (2).csv"
     - rid: 1106481036483100948
       type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
       data:

@@ -3,8 +3,16 @@ using Unity.VisualScripting;
 using UnityEditorInternal;
 using UnityEngine;
 
+public enum TransformationModes
+{
+    none,
+    human,
+    beast
+}
+
 public class Player : MonoBehaviour
 {
+    public float hp;
     public float walkSpeed;
     public float runSpeed;
 
@@ -15,6 +23,8 @@ public class Player : MonoBehaviour
     public Transform arrowOrigin;
     public Transform swordOrigin;
     public GameObject arrowPrefab;
+
+    [HideInInspector] public TransformationModes transformationMode; 
     public Rigidbody2D rb { get; private set; }
     public Animator animator { get; private set; }
     public StateMachine<Player> StateMachine { get; private set; }
@@ -39,6 +49,16 @@ public class Player : MonoBehaviour
         StateMachine.Initialize(PlayerStateFactory.IdleState);
     }
 
+    private void OnEnable()
+    {
+        EventBus.OnPlayerHitEvent += OnHit;
+    }
+
+    private void OnDisable()
+    {
+        EventBus.OnPlayerHitEvent -= OnHit;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -58,6 +78,11 @@ public class Player : MonoBehaviour
 
     }
 
+    private void OnHit()
+    {
+        hp -= 1;
+    }
+
     public void Shoot()
     {
         Instantiate(arrowPrefab, arrowOrigin.position, arrowOrigin.rotation);
@@ -67,6 +92,8 @@ public class Player : MonoBehaviour
     {
         StateMachine.CurrentState.FixedUpdate();
     }
+
+    
 
     private void OnDrawGizmos()
     {

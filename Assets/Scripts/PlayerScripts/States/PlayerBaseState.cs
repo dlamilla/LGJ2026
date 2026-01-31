@@ -36,5 +36,10 @@ public class PlayerBaseState : State<Player>
         yInput = Input.GetAxisRaw("Vertical");
 
         dir = new Vector3(xInput, yInput).normalized;
+
+        if (Input.GetMouseButtonDown(1) && stateMachine.CurrentState != playerStateFactory.AttackState)
+        {
+            stateMachine.ChangeState(playerStateFactory.AttackState);
+        }
     }
 }

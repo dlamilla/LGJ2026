@@ -20,7 +20,7 @@ public class PlayerWalkState : PlayerBaseState
     {
         base.FixedUpdate();
 
-        Vector3 nextPos = entity.transform.position + dir * entity.moveSpeed * Time.deltaTime;
+        Vector3 nextPos = entity.transform.position + dir * entity.walkSpeed * Time.deltaTime;
 
         rb.MovePosition(nextPos);
     }
@@ -32,6 +32,11 @@ public class PlayerWalkState : PlayerBaseState
         if(xInput == 0 && yInput == 0)
         {
             stateMachine.ChangeState(playerStateFactory.IdleState);
+        }
+
+        if((xInput != 0 || yInput != 0) && Input.GetKey(KeyCode.C))
+        {
+            stateMachine.ChangeState(playerStateFactory.RunState);
         }
     }
 }

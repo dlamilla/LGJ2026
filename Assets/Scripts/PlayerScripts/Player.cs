@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed;
+    public float walkSpeed;
+    public float runSpeed;
 
     public Rigidbody2D rb;
     public StateMachine<Player> StateMachine { get; private set; }

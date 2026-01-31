@@ -9,6 +9,7 @@ public class PlayerRunState : PlayerBaseState
     public override void Enter()
     {
         base.Enter();
+        
     }
 
     public override void Exit()
@@ -16,8 +17,27 @@ public class PlayerRunState : PlayerBaseState
         base.Exit();
     }
 
+    public override void FixedUpdate()
+    {
+        base.FixedUpdate();
+
+        Vector3 nextPos = entity.transform.position + dir * entity.runSpeed * Time.deltaTime;
+
+        rb.MovePosition(nextPos);
+    }
+
     public override void Update()
     {
         base.Update();
+
+        if (xInput == 0 && yInput == 0)
+        {
+            stateMachine.ChangeState(playerStateFactory.IdleState);
+        }
+
+        if ((xInput != 0 || yInput != 0) && Input.GetKeyUp(KeyCode.C))
+        {
+            stateMachine.ChangeState(playerStateFactory.WalkState);
+        }
     }
 }

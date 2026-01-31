@@ -1,16 +1,20 @@
 using UnityEngine;
 
-public class EnemyStateFactory : MonoBehaviour
+public class EnemyStateFactory 
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public EnemyAttackState EnemyAttackState { get; private set; }
+
+    public EnemyChaseState EnemyChaseState { get; private set; }
+    public EnemyPatrolState EnemyPatrolState { get; private set;}
+
+    public EnemyDeathState EnemyDeathState { get; private set; }
+
+    public void Initialize(Enemy enemy, StateMachine<Enemy> stateMachine)
     {
-        
+        EnemyAttackState = new EnemyAttackState(enemy, this, stateMachine);
+        EnemyChaseState = new EnemyChaseState(enemy, this, stateMachine);
+        EnemyPatrolState = new EnemyPatrolState(enemy, this, stateMachine);
+        EnemyDeathState = new EnemyDeathState(enemy, this, stateMachine);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

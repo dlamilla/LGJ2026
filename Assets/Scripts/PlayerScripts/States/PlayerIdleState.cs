@@ -9,6 +9,11 @@ public class PlayerIdleState : PlayerBaseState
     public override void Enter()
     {
         base.Enter();
+        canMove = true;
+
+        animator.Play("Idle_BlendTree");
+        animator.SetFloat("last_moveX", last_xInput);
+        animator.SetFloat("last_moveY", last_yInput);
     }
 
     public override void Exit()
@@ -19,7 +24,6 @@ public class PlayerIdleState : PlayerBaseState
     public override void Update()
     {
         base.Update();
-        
 
         if(xInput != 0 || yInput != 0)
         {

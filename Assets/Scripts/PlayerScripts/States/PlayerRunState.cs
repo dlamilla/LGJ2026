@@ -39,5 +39,8 @@ public class PlayerRunState : PlayerBaseState
         {
             stateMachine.ChangeState(playerStateFactory.WalkState);
         }
+
+        animator.SetFloat("moveX", xInput);
+        animator.SetFloat("moveY", yInput);
     }
 }

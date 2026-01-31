@@ -1,5 +1,6 @@
 using Unity.Cinemachine;
 using Unity.VisualScripting;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -15,6 +16,7 @@ public class Player : MonoBehaviour
     public Transform swordOrigin;
     public GameObject arrowPrefab;
     public Rigidbody2D rb { get; private set; }
+    public Animator animator { get; private set; }
     public StateMachine<Player> StateMachine { get; private set; }
 
     public PlayerStateFactory PlayerStateFactory { get; private set; }
@@ -24,6 +26,7 @@ public class Player : MonoBehaviour
         PlayerStateFactory = new PlayerStateFactory();
 
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
 
 
@@ -41,21 +44,23 @@ public class Player : MonoBehaviour
     {
         StateMachine.CurrentState.Update();
 
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPos.z = 0f;
-            
-        dirToMouse = (mouseWorldPos - transform.position).normalized;
 
-        float angle = Mathf.Atan2(mouseWorldPos.y, mouseWorldPos.x) * Mathf.Rad2Deg;
 
-        swordOrigin.rotation = Quaternion.Euler(0,0,angle);
+        //float angle = Mathf.Atan2(mouseWorldPos.y, mouseWorldPos.x) * Mathf.Rad2Deg;
 
-        if (Input.GetMouseButtonDown(0))
+        //swordOrigin.rotation = Quaternion.Euler(0,0,angle);
+
+        if (Input.GetMouseButtonDown(0) && StateMachine.CurrentState != PlayerStateFactory.AttackState)
         {
-            Instantiate(arrowPrefab, arrowOrigin.position, Quaternion.identity);
+            StateMachine.ChangeState(PlayerStateFactory.AttackState);
             //impulseSource.GenerateImpulse();
         }
 
+    }
+
+    public void Shoot()
+    {
+        Instantiate(arrowPrefab, arrowOrigin.position, arrowOrigin.rotation);
     }
 
     private void FixedUpdate()

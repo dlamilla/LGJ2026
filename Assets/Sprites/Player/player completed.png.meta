@@ -1,0 +1,1365 @@
+fileFormatVersion: 2
+guid: eacdfe46d3be3ed4aba9839c7b110a2f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4835909259839481287
+    second: player completed_0
+  - first:
+      213: -1592654415813028594
+    second: player completed_1
+  - first:
+      213: -404060628106340902
+    second: player completed_2
+  - first:
+      213: 9134603521947198748
+    second: player completed_3
+  - first:
+      213: 7518333374548281641
+    second: player completed_4
+  - first:
+      213: 1755342245706317385
+    second: player completed_5
+  - first:
+      213: -89063868098870626
+    second: player completed_6
+  - first:
+      213: 2283446140031061427
+    second: player completed_7
+  - first:
+      213: 9163382757096714843
+    second: player completed_8
+  - first:
+      213: 4997778868409930260
+    second: player completed_9
+  - first:
+      213: 1470359454714579052
+    second: player completed_10
+  - first:
+      213: -5280938772807386719
+    second: player completed_11
+  - first:
+      213: 1207287448111441740
+    second: player completed_12
+  - first:
+      213: 4468302668525487467
+    second: player completed_13
+  - first:
+      213: 7967241805058114576
+    second: player completed_14
+  - first:
+      213: -4297436464569304949
+    second: player completed_15
+  - first:
+      213: -7730108319295061140
+    second: player completed_16
+  - first:
+      213: -4445722320885163016
+    second: player completed_17
+  - first:
+      213: -6394957202149626743
+    second: player completed_18
+  - first:
+      213: -4336296642232225401
+    second: player completed_19
+  - first:
+      213: 4876884378054510710
+    second: player completed_20
+  - first:
+      213: -9109294272511660261
+    second: player completed_21
+  - first:
+      213: 4394898823133236770
+    second: player completed_22
+  - first:
+      213: 6883149660522149231
+    second: player completed_23
+  - first:
+      213: 6037924395089801592
+    second: player completed_24
+  - first:
+      213: 3066878825245227693
+    second: player completed_25
+  - first:
+      213: 7833813299005311839
+    second: player completed_26
+  - first:
+      213: -6644117871091712380
+    second: player completed_27
+  - first:
+      213: 8501544174008425761
+    second: player completed_28
+  - first:
+      213: -2778025530926096205
+    second: player completed_29
+  - first:
+      213: 6539404886511889622
+    second: player completed_30
+  - first:
+      213: 3134993813058561241
+    second: player completed_31
+  - first:
+      213: 3347221057891876951
+    second: player completed_32
+  - first:
+      213: 4569253288865160732
+    second: player completed_33
+  - first:
+      213: 8934287030978649884
+    second: player completed_34
+  - first:
+      213: -3632036760145001359
+    second: player completed_35
+  - first:
+      213: 966625383048308845
+    second: player completed_36
+  - first:
+      213: 2146156828237742895
+    second: player completed_37
+  - first:
+      213: -4039981671611240395
+    second: player completed_38
+  - first:
+      213: -4291266953867672390
+    second: player completed_39
+  - first:
+      213: 4586918556716008711
+    second: player completed_40
+  - first:
+      213: 5656606936822832499
+    second: player completed_41
+  - first:
+      213: -8105733796335088652
+    second: player completed_42
+  - first:
+      213: 6111118361119281017
+    second: player completed_43
+  - first:
+      213: -6681975774433376041
+    second: player completed_44
+  - first:
+      213: 5708823642008958188
+    second: player completed_45
+  - first:
+      213: 6987349468715064625
+    second: player completed_46
+  - first:
+      213: 864443172382995431
+    second: player completed_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player completed_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2116
+        width: 138
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ade31662663ecb0800000000000000
+      internalID: -4835909259839481287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 2124
+        width: 143
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05d18f3f31c5e9e0800000000000000
+      internalID: -1592654415813028594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_2
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 2131
+        width: 140
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad51002effc746af0800000000000000
+      internalID: -404060628106340902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_3
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2116
+        width: 140
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15e1b98181a4ce70800000000000000
+      internalID: 9134603521947198748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_4
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 2124
+        width: 139
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9290aecce5c765860800000000000000
+      internalID: 7518333374548281641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_5
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 2131
+        width: 139
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ebf86e87a3c5810800000000000000
+      internalID: 1755342245706317385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1819
+        width: 122
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9205a342e493cef0800000000000000
+      internalID: -89063868098870626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_7
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1826
+        width: 127
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdc9488a2e60bf10800000000000000
+      internalID: 2283446140031061427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_8
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1832
+        width: 131
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5270b16110ea2f70800000000000000
+      internalID: 9163382757096714843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_9
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1837
+        width: 122
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4121785c66dab5540800000000000000
+      internalID: 4997778868409930260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_10
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1845
+        width: 125
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68466e3224c76410800000000000000
+      internalID: 1470359454714579052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_11
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 1828
+        width: 123
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a97a3e6a2656b6b0800000000000000
+      internalID: -5280938772807386719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1521
+        width: 137
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47687e998521c010800000000000000
+      internalID: 1207287448111441740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1522
+        width: 137
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65446a5a99920e30800000000000000
+      internalID: 4468302668525487467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_14
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1525
+        width: 137
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014812e9534519e60800000000000000
+      internalID: 7967241805058114576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_15
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1525
+        width: 137
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b883984ed407c54c0800000000000000
+      internalID: -4297436464569304949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_16
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1525
+        width: 137
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c634021807329b490800000000000000
+      internalID: -7730108319295061140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_17
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 1525
+        width: 137
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb5d958a1f9d42c0800000000000000
+      internalID: -4445722320885163016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1228
+        width: 120
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cab0c7e4c8047a0800000000000000
+      internalID: -6394957202149626743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_19
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1245
+        width: 119
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7817707bd2162d3c0800000000000000
+      internalID: -4336296642232225401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_20
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1237
+        width: 115
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6784794c08c2ea340800000000000000
+      internalID: 4876884378054510710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_21
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1232
+        width: 128
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f217c4f19459180800000000000000
+      internalID: -9109294272511660261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_22
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1226
+        width: 121
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e83a8c131ddfc30800000000000000
+      internalID: 4394898823133236770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_23
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1219
+        width: 114
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65f543d52cd58f50800000000000000
+      internalID: 6883149660522149231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_24
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 916
+        width: 156
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8713efd3f340bc350800000000000000
+      internalID: 6037924395089801592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_25
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 924
+        width: 161
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daab8e3ea0ebf8a20800000000000000
+      internalID: 3066878825245227693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_26
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 931
+        width: 158
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b41fba0bb47bc60800000000000000
+      internalID: 7833813299005311839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_27
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 916
+        width: 158
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ef0cf8ff95bc3a0800000000000000
+      internalID: -6644117871091712380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_28
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 924
+        width: 157
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d5016126d8bf570800000000000000
+      internalID: 8501544174008425761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_29
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 931
+        width: 157
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b02f2c8f787279d0800000000000000
+      internalID: -2778025530926096205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 628
+        width: 134
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcaef6d812a0ca50800000000000000
+      internalID: 6539404886511889622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_31
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 645
+        width: 134
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d42768534cb18b20800000000000000
+      internalID: 3134993813058561241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_32
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 637
+        width: 141
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7504a5c51d7b37e20800000000000000
+      internalID: 3347221057891876951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_33
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 632
+        width: 149
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ed79348af396f30800000000000000
+      internalID: 4569253288865160732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_34
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 626
+        width: 147
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f9cd208b6fcfb70800000000000000
+      internalID: 8934287030978649884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_35
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 619
+        width: 138
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174856c5fc9689dc0800000000000000
+      internalID: -3632036760145001359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_36
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 321
+        width: 123
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68687b1aa42a6d00800000000000000
+      internalID: 966625383048308845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_37
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 322
+        width: 123
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23c363b34ea8cd10800000000000000
+      internalID: 2146156828237742895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_38
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 325
+        width: 123
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530f58c031a1fe7c0800000000000000
+      internalID: -4039981671611240395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 325
+        width: 123
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4485a017b5274c0800000000000000
+      internalID: -4291266953867672390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_40
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 325
+        width: 126
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70584b2ff1208af30800000000000000
+      internalID: 4586918556716008711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_41
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 325
+        width: 123
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37dd55ff90e408e40800000000000000
+      internalID: 5656606936822832499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_42
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 19
+        width: 119
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb8199ee06a28f80800000000000000
+      internalID: -8105733796335088652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_43
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 26
+        width: 128
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fc1e675cd0fc450800000000000000
+      internalID: 6111118361119281017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_44
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 32
+        width: 130
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8022f8f6ad443a0800000000000000
+      internalID: -6681975774433376041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_45
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 37
+        width: 122
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4bb431bd0d93f40800000000000000
+      internalID: 5708823642008958188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_46
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 45
+        width: 109
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d964c325d08f060800000000000000
+      internalID: 6987349468715064625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player completed_47
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 28
+        width: 110
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3766a3c7e1ffb00800000000000000
+      internalID: 864443172382995431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      player completed_0: -4835909259839481287
+      player completed_1: -1592654415813028594
+      player completed_10: 1470359454714579052
+      player completed_11: -5280938772807386719
+      player completed_12: 1207287448111441740
+      player completed_13: 4468302668525487467
+      player completed_14: 7967241805058114576
+      player completed_15: -4297436464569304949
+      player completed_16: -7730108319295061140
+      player completed_17: -4445722320885163016
+      player completed_18: -6394957202149626743
+      player completed_19: -4336296642232225401
+      player completed_2: -404060628106340902
+      player completed_20: 4876884378054510710
+      player completed_21: -9109294272511660261
+      player completed_22: 4394898823133236770
+      player completed_23: 6883149660522149231
+      player completed_24: 6037924395089801592
+      player completed_25: 3066878825245227693
+      player completed_26: 7833813299005311839
+      player completed_27: -6644117871091712380
+      player completed_28: 8501544174008425761
+      player completed_29: -2778025530926096205
+      player completed_3: 9134603521947198748
+      player completed_30: 6539404886511889622
+      player completed_31: 3134993813058561241
+      player completed_32: 3347221057891876951
+      player completed_33: 4569253288865160732
+      player completed_34: 8934287030978649884
+      player completed_35: -3632036760145001359
+      player completed_36: 966625383048308845
+      player completed_37: 2146156828237742895
+      player completed_38: -4039981671611240395
+      player completed_39: -4291266953867672390
+      player completed_4: 7518333374548281641
+      player completed_40: 4586918556716008711
+      player completed_41: 5656606936822832499
+      player completed_42: -8105733796335088652
+      player completed_43: 6111118361119281017
+      player completed_44: -6681975774433376041
+      player completed_45: 5708823642008958188
+      player completed_46: 6987349468715064625
+      player completed_47: 864443172382995431
+      player completed_5: 1755342245706317385
+      player completed_6: -89063868098870626
+      player completed_7: 2283446140031061427
+      player completed_8: 9163382757096714843
+      player completed_9: 4997778868409930260
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

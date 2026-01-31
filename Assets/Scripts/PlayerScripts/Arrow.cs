@@ -19,13 +19,18 @@ public class Arrow : MonoBehaviour
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
 
-        dirToMouse = (mouseWorldPos - transform.position).normalized;
+        dirToMouse = mouseWorldPos - transform.position;
+
+        float angle = Mathf.Atan2(dirToMouse.y, dirToMouse.x) * Mathf.Rad2Deg - 90;
+
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+
         StartCoroutine(Cor());
     }
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = dirToMouse * speed;
+        rb.linearVelocity = dirToMouse.normalized * speed;
     }
 
     IEnumerator Cor()

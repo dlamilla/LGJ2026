@@ -9,6 +9,8 @@ public class PlayerWalkState : PlayerBaseState
     public override void Enter()
     {
         base.Enter();
+
+        animator.Play("Walk_BlendTree");
     }
 
     public override void Exit()
@@ -29,7 +31,8 @@ public class PlayerWalkState : PlayerBaseState
     {
         base.Update();
 
-        if(xInput == 0 && yInput == 0)
+
+        if (xInput == 0 && yInput == 0)
         {
             stateMachine.ChangeState(playerStateFactory.IdleState);
         }
@@ -38,5 +41,8 @@ public class PlayerWalkState : PlayerBaseState
         {
             stateMachine.ChangeState(playerStateFactory.RunState);
         }
+
+        animator.SetFloat("moveX", xInput);
+        animator.SetFloat("moveY", yInput);
     }
 }

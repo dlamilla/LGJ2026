@@ -9,6 +9,10 @@ public class EnemyChaseState : EnemyBaseState
     public override void Enter()
     {
         base.Enter();
+
+
+
+        animator.Play("Chase_BlendTree");
     }
 
     public override void Exit()
@@ -24,5 +28,10 @@ public class EnemyChaseState : EnemyBaseState
     public override void Update()
     {
         base.Update();
+
+        entity.Agent.SetDestination(entity.target.position);
+
+        animator.SetFloat("moveX", entity.dir.x);
+        animator.SetFloat("moveY", entity.dir.y);
     }
 }

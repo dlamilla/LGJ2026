@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Arrow : MonoBehaviour
@@ -9,6 +10,8 @@ public class Arrow : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
     private CinemachineImpulseSource impulseSource;
+
+    private Enemy enemy;
 
     Vector3 dirToMouse;
     private void Awake()
@@ -32,6 +35,13 @@ public class Arrow : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, angle);
 
         StartCoroutine(Cor());
+
+        EventBus.OnEnemyDeathEvent += DestroyArrows;
+    }
+
+    private void OnDisable()
+    {
+        EventBus.OnEnemyDeathEvent -= DestroyArrows;
     }
 
     private void FixedUpdate()
@@ -46,16 +56,20 @@ public class Arrow : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private void DestroyArrows(Enemy enmy)
+    {
+        Destroy(gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (collision.CompareTag("EnemyHurtBox"))
         {
-            //if (collision.transform.parent.TryGetComponent<Enemy>(out var enemy))
-            //{
-            //    enemy.OnHit(damage);
-            //}
-            //Destroy(gameObject);
+            if (collision.transform.parent.TryGetComponent<Enemy>(out var _enemy))
+            {
+                enemy = _enemy;
+            }
 
 
             transform.SetParent(collision.transform);

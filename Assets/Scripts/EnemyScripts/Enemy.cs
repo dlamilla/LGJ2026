@@ -16,28 +16,32 @@ public class Enemy : MonoBehaviour
     public float speed;
     public Transform target;
     public EnemyType enemyType;
+
+    public CapsuleCollider2D hurtbox;
     private Rigidbody2D rb;
 
     private bool alreadyHitPlayer;
 
-    private NavMeshAgent agent;
+    public NavMeshAgent Agent {  get; private set; }    
 
     private CapsuleCollider2D hitbox;
     [Header("Image")]
     public SpriteRenderer spriteRenderer;
 
+    public Animator animator;
     public EnemyStateFactory EnemyStateFactory {  get; private set; }
     public StateMachine<Enemy> StateMachine { get; private set; }
 
-    Vector3 dir;
+    public Vector3 dir;
     private void Awake()
     {
         StateMachine = new StateMachine<Enemy>();
         EnemyStateFactory = new EnemyStateFactory();
+        animator = GetComponent<Animator>();
 
         //rb = GetComponent<Rigidbody2D>();
 
-        agent = GetComponent<NavMeshAgent>();
+        Agent = GetComponent<NavMeshAgent>();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         EnemyStateFactory.Initialize(this, StateMachine);
@@ -46,8 +50,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         StateMachine.Initialize(EnemyStateFactory.EnemyPatrolState);
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
+        Agent.updateRotation = false;
+        Agent.updateUpAxis = false;
     }
 
     // Update is called once per frame
@@ -55,22 +59,15 @@ public class Enemy : MonoBehaviour
     {
         dir = (target.position - transform.position).normalized;
 
-        if (IsPlayerInRange(50) && enemyType == EnemyType.melee)
-        {
-            agent.SetDestination(target.position);
-        }
 
 
-
-        if(hp <= 0)
-        {
-            Destroy(gameObject);
-        }
+        StateMachine.CurrentState.Update();
     }
 
     private void FixedUpdate()
     {
         //rb.MovePosition(transform.position + dir * speed * Time.deltaTime);
+        StateMachine.CurrentState.FixedUpdate();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

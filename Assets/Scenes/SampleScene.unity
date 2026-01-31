@@ -1363,6 +1363,7 @@ GameObject:
   - component: {fileID: 1967498177}
   - component: {fileID: 1967498178}
   - component: {fileID: 1967498179}
+  - component: {fileID: 1967498180}
   m_Layer: 6
   m_Name: enemy
   m_TagString: Untagged
@@ -1386,7 +1387,10 @@ MonoBehaviour:
   speed: 9
   target: {fileID: 93583490}
   enemyType: 1
+  hurtbox: {fileID: 295118180}
   spriteRenderer: {fileID: 0}
+  animator: {fileID: 0}
+  dir: {x: 0, y: 0, z: 0}
 --- !u!212 &1967498174
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1555,6 +1559,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1967498180
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967498172}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10f4d951d6fa38a4a9a71f54d1d63c89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1971111957
 GameObject:
   m_ObjectHideFlags: 0

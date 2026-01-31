@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Tabla1
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 1b3e87ba17973d34da8e20c9a9be1919, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 07900464d86c57149a7a81e975d7700a, type: 2}
+  - {fileID: 11400000, guid: 1259ea6617f123f4786b29d31704b13e, type: 2}
+  - {fileID: 11400000, guid: 4c870c2854f3953469cf1debff8093fb, type: 2}
+  m_Extensions:
+  - rid: 1106481036483100947
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 1106481036483100947
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_ColumnsList:
+        - rid: 1106481036483100948
+        - rid: 1106481036483100949
+        - rid: 1106481036483100950
+        - rid: 1106481036483100955
+        m_ConnectedFile: "C:/Users/lamil/Downloads/Hoja de c\xE1lculo sin t\xEDtulo
+          - Hoja 1 (1).csv"
+    - rid: 1106481036483100948
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_IncludeId: 1
+        m_IncludeSharedComments: 1
+        m_KeyFieldName: Key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    - rid: 1106481036483100949
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: en
+        m_FieldName: English(en)
+        m_CommentFieldName: English(en) Comments
+        m_IncludeComments: 0
+    - rid: 1106481036483100950
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: es
+        m_FieldName: Spanish(es)
+        m_CommentFieldName: Spanish(es) Comments
+        m_IncludeComments: 0
+    - rid: 1106481036483100955
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: da
+        m_FieldName: Danish(da)
+        m_CommentFieldName: Danish(da) Comments
+        m_IncludeComments: 0

@@ -1,9 +1,7 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class MenuOoptions : MonoBehaviour
+public class Movimiento : MonoBehaviour
 {
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,16 +13,4 @@ public class MenuOoptions : MonoBehaviour
     {
         
     }
-
-    public void ChangeScene(int index)
-    {
-        SceneManager.LoadScene(index);
-    }
-
-    public void ExitGame()
-    {
-        Application.Quit();
-    }
-
- 
 }

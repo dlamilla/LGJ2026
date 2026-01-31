@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
+using Unity.VisualScripting;
 public class BarController : MonoBehaviour
 {
     [Header("Barra Roja")]
@@ -133,15 +135,21 @@ public class BarController : MonoBehaviour
     private IEnumerator ChangeValueGreenFull()
     {
         bRestore = true;
-        /*float t = 2f;*/
         while (currentGreen >= 1)
         {
-            /*t -= Time.deltaTime;
-            if(t < 1f)
-            {
+            Image img = greenImage;
+            Sprite normalSprite = greenSprites[currentGreen];
+            Sprite warningSprite = greenSprites[currentGreen - 1];
 
-            }*/
-            yield return new WaitForSecondsRealtime(2f);
+            img.DOKill();
+            DG.Tweening.Sequence seq = DOTween.Sequence();
+            seq.AppendCallback(() => img.sprite = warningSprite);
+            seq.AppendInterval(0.08f);
+            seq.AppendCallback(() => img.sprite = normalSprite);
+            seq.AppendInterval(0.08f);
+
+            seq.SetLoops(4);
+            yield return seq.WaitForCompletion();
             currentGreen--;
             UpdateGreenBar();
         }

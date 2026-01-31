@@ -1,16 +1,28 @@
 using UnityEngine;
 
-public class State : MonoBehaviour
+public abstract class State<T> where T : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected T entity;
+    protected StateMachine<T> stateMachine;
+    protected EnemyStateFactory factory;
+
+    //for the player
+    public State(T entity, StateMachine<T> stateMachine)
     {
-        
+        this.entity = entity;
+        this.stateMachine = stateMachine;
     }
 
-    // Update is called once per frame
-    void Update()
+    //for enemies
+    public State(T entity, EnemyStateFactory enemyStateFactory, StateMachine<T> stateMachine)
     {
-        
+        this.entity = entity;
+        this.factory = enemyStateFactory;
+        this.stateMachine = stateMachine;   
     }
+
+    public abstract void Enter();
+    public abstract void Update();
+    public abstract void FixedUpdate();
+    public abstract void Exit();
 }

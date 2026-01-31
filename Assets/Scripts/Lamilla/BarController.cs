@@ -36,6 +36,16 @@ public class BarController : MonoBehaviour
         
     }
 
+    private void OnEnable()
+    {
+        EventBus.OnPlayerHitEvent += danio;
+    }
+
+    private void OnDisable()
+    {
+        EventBus.OnPlayerHitEvent -= danio;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -169,5 +179,10 @@ public class BarController : MonoBehaviour
     public void UpdateGreenBar()
     {
         greenImage.sprite = greenSprites[currentGreen];
+    }
+
+    public void danio()
+    {
+        RemoveRed(1);
     }
 }

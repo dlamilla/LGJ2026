@@ -6,6 +6,7 @@ public class TNT : MonoBehaviour
     public float explosionDamage;
     public float flamesDamage;
     public int flamesDamageTimes;
+    public int maxFlamesDamageTimes;
 
     bool alreadyHit;
 
@@ -29,22 +30,15 @@ public class TNT : MonoBehaviour
         //spriteRenderer.enabled = false;
         circleCollider.enabled = true;
         animator.Play("Explotion");
+        StartCoroutine(FlamesCor());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("PlayerHurtBox") && !alreadyHit)
         {
-            if (collision.transform.parent.TryGetComponent<Player>(out var player))
-            {
-                EventBus.OnPlayerHit();
-
-                if(coroutine != null)
-                {
-                coroutine = StartCoroutine(FlamesCor());
-
-                }
-            }
+            EventBus.OnPlayerHit();
+            
         }
     }
 
@@ -52,7 +46,7 @@ public class TNT : MonoBehaviour
     {
         circleCollider.radius -= 1;
 
-        while (flamesDamageTimes < 3)
+        while (flamesDamageTimes <= maxFlamesDamageTimes)
         {
             alreadyHit = true;
             circleCollider.enabled = false;

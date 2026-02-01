@@ -126,7 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionDamage: 1
   flamesDamage: 1
-  flamesDamageTimes: 3
+  flamesDamageTimes: 0
+  maxFlamesDamageTimes: 3
 --- !u!58 &2805934209236428155
 CircleCollider2D:
   m_ObjectHideFlags: 0

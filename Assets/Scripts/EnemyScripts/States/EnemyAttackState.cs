@@ -12,10 +12,12 @@ public class EnemyAttackState : EnemyBaseState
 
         if (entity.enemyType == EnemyType.range)
         {
-            chaseCooldown = true;
+            entity.chaseCooldown = true;
             entity.Agent.ResetPath();
             entity.Agent.velocity = Vector3.zero;
             entity.Agent.isStopped = true;
+
+            entity.ShootTnt();
         }
     }
 
@@ -34,5 +36,7 @@ public class EnemyAttackState : EnemyBaseState
     public override void Update()
     {
         base.Update();
+
+        if (entity.enemyType == EnemyType.range) stateMachine.ChangeState(enemyStateFactory.EnemyIdleState);
     }
 }

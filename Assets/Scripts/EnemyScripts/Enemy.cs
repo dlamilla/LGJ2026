@@ -19,6 +19,11 @@ public class Enemy : MonoBehaviour
     public EnemyType enemyType;
     public bool isPlayerDeteced;
 
+    public bool chaseCooldown;
+    public GameObject tntPrefab;
+
+    public Transform[] patrolPoints;
+
     public CapsuleCollider2D hurtbox;
     private Rigidbody2D rb;
 
@@ -63,6 +68,11 @@ public class Enemy : MonoBehaviour
         
         Agent.updateRotation = false;
         Agent.updateUpAxis = false;
+
+        foreach(var c in patrolPoints)
+        {
+            c.SetParent(null);
+        }
     }
 
     // Update is called once per frame
@@ -142,5 +152,36 @@ public class Enemy : MonoBehaviour
         float sqrRange = range * range;
 
         return sqrDistance <= sqrRange;
+    }
+
+    public void ShootTnt()
+    {
+        GameObject go = Instantiate(tntPrefab, transform.position, Quaternion.identity);
+        StartCoroutine(TNTParabolicMove(go, transform.position, target.position, 1));
+    }
+
+    IEnumerator TNTParabolicMove(GameObject go, Vector3 startPos, Vector3 targetPos, float duration)
+    {
+        float time = 0f;
+
+        while (time < duration)
+        {
+            float t = time / duration;
+
+            // Movimiento horizontal correcto (entre puntos FIJOS)
+            Vector3 currentPos = Vector3.Lerp(startPos, targetPos, t);
+
+            // Parábola perfecta
+            float height = 7f;
+            float yOffset = height * 4f * t * (1 - t);
+            currentPos.y += yOffset;
+
+            go.transform.position = currentPos;
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        go.transform.position = targetPos;
     }
 }

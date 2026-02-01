@@ -14,12 +14,18 @@ public class EnemyIdleState : EnemyBaseState
         if(entity.enemyType == EnemyType.range)
         {
             entity.StartCoroutine(Cor());
+            entity.Agent.ResetPath();
+            entity.Agent.isStopped = true;
+            entity.Agent.velocity = Vector3.zero;
         }
+
+        animator.Play("Idle");
     }
 
     public override void Exit()
     {
         base.Exit();
+        entity.Agent.isStopped = false;
     }
 
     public override void FixedUpdate()
@@ -29,13 +35,16 @@ public class EnemyIdleState : EnemyBaseState
 
     public override void Update()
     {
-        base.Update();
+        if (entity.IsPlayerInRange(60) && !entity.chaseCooldown)
+        {
+            stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+        }
     }
 
     IEnumerator Cor()
     {
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(3);
 
-        chaseCooldown = false;
+        entity.chaseCooldown = false;
     }
 }

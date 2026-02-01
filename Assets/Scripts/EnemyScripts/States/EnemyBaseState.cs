@@ -6,8 +6,6 @@ public class EnemyBaseState : State<Enemy>
     protected Animator animator;
     protected EnemyStateFactory enemyStateFactory;
 
-    protected Vector3 lastTargetPosition;
-
     protected bool chaseCooldown;
 
     private float updateTime;
@@ -42,13 +40,6 @@ public class EnemyBaseState : State<Enemy>
             return;
         }
 
-        if(Time.time >= updateTime + .2f)
-        {
-            lastTargetPosition = entity.target.position;
-            updateTime = Time.time;
-            //Debug.Log("called");
-        }
-
         if (entity.IsPlayerInRange(50) && entity.enemyType == EnemyType.melee)
         {
             entity.isPlayerDeteced = true;
@@ -62,7 +53,7 @@ public class EnemyBaseState : State<Enemy>
 
         if (entity.isPlayerDeteced)
         {
-            if(entity.enemyType == EnemyType.range && !chaseCooldown)
+            if(entity.enemyType == EnemyType.range && !entity.chaseCooldown)
             {
                 stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
             }

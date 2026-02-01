@@ -11,6 +11,7 @@ public class EnemyDeathState : EnemyBaseState
     {
         base.Enter();
 
+        inDeathState = true;
         EventBus.OnEnemyDeath(entity);
 
         entity.hurtbox.enabled = false;

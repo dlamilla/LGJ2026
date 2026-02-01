@@ -499,7 +499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &241340206
 Rigidbody2D:
   serializedVersion: 5
@@ -1780,7 +1780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1967498173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   speed: 9
   distanceToAttack: 0
   target: {fileID: 93583490}
-  enemyType: 2
+  enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
   chaseCooldown: 0

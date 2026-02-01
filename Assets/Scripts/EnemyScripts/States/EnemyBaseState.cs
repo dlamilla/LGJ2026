@@ -9,6 +9,8 @@ public class EnemyBaseState : State<Enemy>
     protected bool chaseCooldown;
 
     private float updateTime;
+
+    protected bool inDeathState;
     public EnemyBaseState(Enemy entity, EnemyStateFactory enemyStateFactory, StateMachine<Enemy> stateMachine) : base(entity, enemyStateFactory, stateMachine)
     {
         animator = entity.animator;
@@ -36,6 +38,7 @@ public class EnemyBaseState : State<Enemy>
 
         if (entity.hp <= 0)
         {
+            if (inDeathState) return;
             stateMachine.ChangeState(enemyStateFactory.EnemyDeathState);
             return;
         }

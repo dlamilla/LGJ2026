@@ -10,7 +10,14 @@ public class PlayerWalkState : PlayerBaseState
     {
         base.Enter();
 
-        animator.Play("Walk_BlendTree");
+        if (entity.isInJaguarPhase)
+        {
+            animator.Play("Walk_Morph");
+        }
+        else
+        {
+            animator.Play("Walk_BlendTree");
+        }
     }
 
     public override void Exit()

@@ -8,12 +8,15 @@ public class PlayerStateFactory
 
     public PlayerAttackState AttackState { get; private set; }
 
+    public PlayerMorphState MorphState { get; private set; }
+
     public void Initialize(Player player, StateMachine<Player> stateMachine)
     {
         IdleState = new PlayerIdleState(player, stateMachine);
         WalkState = new PlayerWalkState(player, stateMachine);
         RunState = new PlayerRunState(player, stateMachine);
         AttackState = new PlayerAttackState(player, stateMachine);
+        MorphState = new PlayerMorphState(player, stateMachine);
     }
 
 }

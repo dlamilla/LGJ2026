@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
     public Transform swordOrigin;
     public GameObject arrowPrefab;
 
+    public AnimatorStateInfo info;
+
     [HideInInspector] public TransformationModes transformationMode;
     public Rigidbody2D rb { get; private set; }
     public Animator animator { get; private set; }
@@ -67,7 +69,7 @@ public class Player : MonoBehaviour
     {
         StateMachine.CurrentState.Update();
 
-
+        info = animator.GetCurrentAnimatorStateInfo(0);
 
         //float angle = Mathf.Atan2(mouseWorldPos.y, mouseWorldPos.x) * Mathf.Rad2Deg;
 
@@ -77,6 +79,11 @@ public class Player : MonoBehaviour
         {
             StateMachine.ChangeState(PlayerStateFactory.AttackState);
             //impulseSource.GenerateImpulse();
+        }
+
+        if (Input.GetKey(KeyCode.Q) )
+        {
+            StateMachine.ChangeState(PlayerStateFactory.MorphState);
         }
 
     }

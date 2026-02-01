@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerMorphState : PlayerBaseState
 {
-    float timer;
     public PlayerMorphState(Player entity, StateMachine<Player> stateMachine) : base(entity, stateMachine)
     {
     }
@@ -10,7 +9,6 @@ public class PlayerMorphState : PlayerBaseState
     public override void Enter()
     {
         base.Enter();
-        timer = 1;
         animator.Play("Mutating");
         entity.isInJaguarPhase = true;
     }
@@ -29,11 +27,10 @@ public class PlayerMorphState : PlayerBaseState
     {
         base.Update();
 
-        timer -= Time.deltaTime;
-
-        if(timer <= 0)
+        if(entity.info.normalizedTime > 1)
         {
             stateMachine.ChangeState(playerStateFactory.IdleState);
         }
+
     }
 }

@@ -11,7 +11,15 @@ public class PlayerIdleState : PlayerBaseState
         base.Enter();
         canMove = true;
 
-        animator.Play("Idle_BlendTree");
+        if (entity.isInJaguarPhase)
+        {
+            animator.Play("Idle_Morph");
+        }
+        else
+        {
+
+            animator.Play("Idle_BlendTree");
+        }
         animator.SetFloat("last_moveX", last_xInput);
         animator.SetFloat("last_moveY", last_yInput);
     }

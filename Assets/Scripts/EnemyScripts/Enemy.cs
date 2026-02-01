@@ -151,7 +151,7 @@ public class Enemy : MonoBehaviour
 
         EventBus.OnPlayerHit();
 
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSecondsRealtime(2);
 
         alreadyHitPlayer = false;
     }

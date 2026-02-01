@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
     public PlayerStateFactory PlayerStateFactory { get; private set; }
 
-    bool b;
+    bool b,k;
     private void Awake()
     {
         StateMachine = new StateMachine<Player>();
@@ -101,6 +101,19 @@ public class Player : MonoBehaviour
             StartCoroutine(Cor());
         }
 
+        if (isDead && !k)
+        {   
+            StartCoroutine(Espera());
+        }
+
+    }
+
+    private IEnumerator Espera()
+    {
+        k = true;
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(1);
+        this.gameObject.SetActive(false);
     }
 
     private void OnHit()

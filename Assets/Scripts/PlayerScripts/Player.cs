@@ -1,8 +1,7 @@
 using System.Collections;
 using Unity.Cinemachine;
-using Unity.VisualScripting;
-using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum TransformationModes
 {
@@ -17,6 +16,7 @@ public class Player : MonoBehaviour
     public float walkSpeed;
     public float runSpeed;
     public bool isInJaguarPhase;
+    public float jaguarAttackDamage;
 
     public bool isDead;
 
@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     public CapsuleCollider2D hurtbox;
     public BoxCollider2D swordColl;
     public CinemachineImpulseSource impulseSource;
+    public Seeker seeker;
 
     public SpriteRenderer SpriteRenderer {  get; private set; }
     Vector3 dirToMouse;
@@ -40,6 +41,8 @@ public class Player : MonoBehaviour
     public StateMachine<Player> StateMachine { get; private set; }
 
     public PlayerStateFactory PlayerStateFactory { get; private set; }
+
+    bool b;
     private void Awake()
     {
         StateMachine = new StateMachine<Player>();
@@ -92,6 +95,12 @@ public class Player : MonoBehaviour
             StateMachine.ChangeState(PlayerStateFactory.MorphState);
         }
 
+        if(seeker.isBossDead && !b)
+        {
+            b = true;
+            StartCoroutine(Cor());
+        }
+
     }
 
     private void OnHit()
@@ -109,6 +118,12 @@ public class Player : MonoBehaviour
         StateMachine.CurrentState.FixedUpdate();
     }
 
+    IEnumerator Cor()
+    {
+        yield return new WaitForSeconds(1.3f);
+
+        SceneManager.LoadScene(2);
+    }
 
     private void OnDrawGizmos()
     {

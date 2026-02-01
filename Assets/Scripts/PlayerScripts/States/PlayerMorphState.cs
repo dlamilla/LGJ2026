@@ -18,15 +18,8 @@ public class PlayerMorphState : PlayerBaseState
         base.Exit();
     }
 
-    public override void FixedUpdate()
-    {
-        base.FixedUpdate();
-    }
-
     public override void Update()
     {
-        base.Update();
-
         if(entity.info.normalizedTime > 1)
         {
             stateMachine.ChangeState(playerStateFactory.IdleState);

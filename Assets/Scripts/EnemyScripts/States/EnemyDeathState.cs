@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyDeathState : EnemyBaseState
 {
@@ -9,8 +10,12 @@ public class EnemyDeathState : EnemyBaseState
 
     public override void Enter()
     {
-        base.Enter();
+        base.Enter(); 
 
+        if(entity.enemyType == EnemyType.boss)
+        {
+            entity.seeker.isBossDead = true;
+        }
         entity.isDead = true;
         
         EventBus.OnEnemyDeath(entity);
@@ -24,6 +29,7 @@ public class EnemyDeathState : EnemyBaseState
         if(entity.enemyType != EnemyType.boss)
         {
             entity.StartCoroutine(CorDeath());
+            entity.hitbox.enabled = false;
         }
         animator.Play("Death");
     }
@@ -44,7 +50,8 @@ public class EnemyDeathState : EnemyBaseState
         {
             if (entity.animatorStateInfo.normalizedTime >= 1)
             {
-                Object.Destroy(entity.gameObject);
+                SceneManager.LoadScene("EscenaFinal");
+                //Object.Destroy(entity.gameObject);
             }
         }
     }

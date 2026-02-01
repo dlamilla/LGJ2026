@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     public bool isPlayerDeteced;
     public float knockBackForce;
     public float visionDistance;
-
+    public Seeker seeker;
     public bool isDead;
 
     public bool chaseCooldown;
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
 
     public NavMeshAgent Agent {  get; private set; }    
 
-    private CapsuleCollider2D hitbox;
+    public BoxCollider2D hitbox;
     [Header("Image")]
     public SpriteRenderer spriteRenderer;
 
@@ -64,6 +64,11 @@ public class Enemy : MonoBehaviour
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         EnemyStateFactory.Initialize(this, StateMachine);
+
+        if(enemyType != EnemyType.boss)
+        {
+            hitbox = GetComponent<BoxCollider2D>();
+        }
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -146,7 +151,7 @@ public class Enemy : MonoBehaviour
 
         EventBus.OnPlayerHit();
 
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(1);
 
         alreadyHitPlayer = false;
     }

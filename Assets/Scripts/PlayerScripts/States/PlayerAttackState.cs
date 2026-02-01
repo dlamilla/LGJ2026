@@ -29,14 +29,20 @@ public class PlayerAttackState : PlayerBaseState
 
         dirToMouse2 = ((Vector2)mouseWorldPos - (Vector2)entity.transform.position).normalized;
 
-        animator.Play("Attack_BlendTree");
+        if (entity.isInJaguarPhase)
+        {
+            animator.Play("Attack_Jaguar");
+        }
+        else
+        {
+            animator.Play("Attack_BlendTree");
+        }
 
         animator.SetFloat("mousePosX", dirToMouse2.x);
         animator.SetFloat("mousePosY", dirToMouse2.y);
 
-        entity.swordColl.enabled = true;
+        if (!entity.isInJaguarPhase) entity.Shoot();
 
-        entity.Shoot();
     }
 
     public override void Exit()
@@ -44,7 +50,6 @@ public class PlayerAttackState : PlayerBaseState
         base.Exit();
         last_xInput = valueX;
         last_yInput = valueY;
-        entity.swordColl.enabled = false;
         canMove = true;
     }
 
@@ -59,7 +64,11 @@ public class PlayerAttackState : PlayerBaseState
 
         if (Input.GetMouseButtonDown(0))
         {
-            entity.Shoot();
+            if (!entity.isInJaguarPhase)
+            {
+                entity.Shoot();
+            }
+
             updatedTime = Time.time;
         }
 

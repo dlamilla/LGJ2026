@@ -12,7 +12,7 @@ public class EnemyDeathState : EnemyBaseState
         base.Enter();
 
         inDeathState = true;
-        EventBus.OnEnemyDeath(entity);
+        
 
         entity.hurtbox.enabled = false;
 
@@ -42,6 +42,8 @@ public class EnemyDeathState : EnemyBaseState
     IEnumerator CorDeath()
     {
         yield return new WaitForSecondsRealtime(.7f);
+        EventBus.OnEnemyDeath(entity);
+        yield return null;
         Object.Destroy(entity.gameObject);
     }
 }

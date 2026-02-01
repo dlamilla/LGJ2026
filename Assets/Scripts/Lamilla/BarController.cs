@@ -17,7 +17,7 @@ public class BarController : MonoBehaviour
 
     [Header("Barra Verde")]
     public int maxGreen = 6;
-    public int currentGreen = 6;
+    public int currentGreen = 0;
 
     public Image greenImage;
     public Sprite[] greenSprites;
@@ -27,7 +27,7 @@ public class BarController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        currentGreen = maxGreen;
+        currentGreen = 0;
         UpdateGreenBar();
 
         currentRed = maxRed;
@@ -39,25 +39,27 @@ public class BarController : MonoBehaviour
     private void OnEnable()
     {
         EventBus.OnPlayerHitEvent += danio;
+        EventBus.OnEnemyDeathEvent2 += SubirVerde;
     }
 
     private void OnDisable()
     {
         EventBus.OnPlayerHitEvent -= danio;
+        EventBus.OnEnemyDeathEvent2 -= SubirVerde;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if(Input.GetKeyDown(KeyCode.G))
-        //{
-        //    StartCoroutine(ChangeValueGreenFull()); 
-        //}
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            StartCoroutine(ChangeValueGreenFull());
+        }
 
-        //if(Input.GetKeyDown(KeyCode.H))
-        //{
-        //    AddGreen(1);
-        //}
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            AddGreen(1);
+        }
         //if (Input.GetKeyDown(KeyCode.J))
         //{
         //    RemoveRed(1);
@@ -83,6 +85,12 @@ public class BarController : MonoBehaviour
         if (bRestore) return;
         currentGreen = Mathf.Clamp(currentGreen + amount, 0, maxGreen);
         UpdateGreenBar();
+    }
+
+    public void SubirVerde()
+    {
+        Debug.Log("Me suscribí: " + gameObject.name);
+        AddGreen(1);
     }
 
     public void RemoveGreen(int amount)

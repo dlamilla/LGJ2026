@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
     public bool isPlayerDeteced;
     public float knockBackForce;
 
+    public bool isDead;
+
     public bool chaseCooldown;
     public bool canAttackPlayer;
     public bool canChargeAttack;

@@ -11,8 +11,9 @@ public class EnemyDeathState : EnemyBaseState
     {
         base.Enter();
 
-        inDeathState = true;
+        entity.isDead = true;
         
+        EventBus.OnEnemyDeath(entity);
 
         entity.hurtbox.enabled = false;
 
@@ -36,14 +37,12 @@ public class EnemyDeathState : EnemyBaseState
 
     public override void Update()
     {
-        base.Update();
+
     }
 
     IEnumerator CorDeath()
     {
         yield return new WaitForSecondsRealtime(.7f);
-        EventBus.OnEnemyDeath(entity);
-        yield return null;
         Object.Destroy(entity.gameObject);
     }
 }

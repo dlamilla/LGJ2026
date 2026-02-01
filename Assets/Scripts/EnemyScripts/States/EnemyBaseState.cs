@@ -36,12 +36,8 @@ public class EnemyBaseState : State<Enemy>
     {
         Debug.Log($"im in {stateMachine.CurrentState}");
 
-        if (entity.hp <= 0)
-        {
-            if (inDeathState) return;
-            stateMachine.ChangeState(enemyStateFactory.EnemyDeathState);
-            return;
-        }
+        if (entity.isDead) return;
+
 
         if (entity.enemyType != EnemyType.boss)
         {
@@ -81,6 +77,12 @@ public class EnemyBaseState : State<Enemy>
                 entity.transform.rotation = Quaternion.Euler(0, 0, angle);
             }
         }
-        
+
+        if (entity.hp <= 0 && !inDeathState)
+        {
+            stateMachine.ChangeState(enemyStateFactory.EnemyDeathState);
+            return;
+        }
+
     }
 }

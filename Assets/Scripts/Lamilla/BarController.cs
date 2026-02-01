@@ -39,13 +39,13 @@ public class BarController : MonoBehaviour
     private void OnEnable()
     {
         EventBus.OnPlayerHitEvent += danio;
-        EventBus.OnEnemyDeathEvent2 += SubirVerde;
+        EventBus.OnEnemyDeathEvent += SubirVerde;
     }
 
     private void OnDisable()
     {
         EventBus.OnPlayerHitEvent -= danio;
-        EventBus.OnEnemyDeathEvent2 -= SubirVerde;
+        EventBus.OnEnemyDeathEvent -= SubirVerde;
     }
 
     // Update is called once per frame
@@ -87,7 +87,7 @@ public class BarController : MonoBehaviour
         UpdateGreenBar();
     }
 
-    public void SubirVerde()
+    public void SubirVerde(Enemy enemy)
     {
         Debug.Log("Me suscribí: " + gameObject.name);
         AddGreen(1);

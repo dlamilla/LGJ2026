@@ -10,6 +10,8 @@ public class PlayerStateFactory
 
     public PlayerMorphState MorphState { get; private set; }
 
+    public PlayerDeathState DeathState { get; private set; }
+
     public void Initialize(Player player, StateMachine<Player> stateMachine)
     {
         IdleState = new PlayerIdleState(player, stateMachine);
@@ -17,6 +19,7 @@ public class PlayerStateFactory
         RunState = new PlayerRunState(player, stateMachine);
         AttackState = new PlayerAttackState(player, stateMachine);
         MorphState = new PlayerMorphState(player, stateMachine);
+        DeathState = new PlayerDeathState(player, stateMachine);
     }
 
 }

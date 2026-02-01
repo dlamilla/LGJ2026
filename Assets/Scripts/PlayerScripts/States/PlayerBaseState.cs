@@ -43,6 +43,14 @@ public class PlayerBaseState : State<Player>
 
         //Debug.Log($"im in {stateMachine.CurrentState}");
 
+        if(entity.isDead) return;
+
+        if(entity.hp <= 0)
+        {
+            stateMachine.ChangeState(playerStateFactory.DeathState);
+            return;
+        }
+
         if (canMove)
         {
             xInput = Input.GetAxisRaw("Horizontal");

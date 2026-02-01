@@ -2911,6 +2911,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -3310,6 +3311,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -3604,6 +3606,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -4309,6 +4312,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -5079,6 +5083,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -6394,6 +6399,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -7867,6 +7873,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -20171,6 +20178,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -21191,6 +21199,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -22472,7 +22481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 99.900024, y: -9.900024}
+  m_AnchoredPosition: {x: 99.8999, y: -9.900024}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1232184093
@@ -24261,6 +24270,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -25546,6 +25556,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -74985,6 +74996,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -76451,6 +76463,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
   canChargeAttack: 0
@@ -76910,7 +76923,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1214407087
   m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingOrder: -91
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.65882355, g: 0.5137255, b: 0.36078432, a: 1}
   m_FlipX: 0
@@ -77098,6 +77111,8 @@ MonoBehaviour:
   walkSpeed: 15
   runSpeed: 30
   isInJaguarPhase: 0
+  isDead: 0
+  hurtbox: {fileID: 149325562}
   swordColl: {fileID: 2121147030}
   impulseSource: {fileID: 0}
   arrowOrigin: {fileID: 1238583281}
@@ -77147,7 +77162,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: -5097137553825871430, guid: 1e2166e6ffb2a7e4a9bdb058dbf25f17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

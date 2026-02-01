@@ -18,9 +18,14 @@ public class Player : MonoBehaviour
     public float runSpeed;
     public bool isInJaguarPhase;
 
+    public bool isDead;
+
     private bool alreadyHit;
+    public CapsuleCollider2D hurtbox;
     public BoxCollider2D swordColl;
     public CinemachineImpulseSource impulseSource;
+
+    public SpriteRenderer SpriteRenderer {  get; private set; }
     Vector3 dirToMouse;
 
     public Transform arrowOrigin;
@@ -43,6 +48,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
 
 
 

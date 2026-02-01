@@ -32,6 +32,8 @@ public class EnemyPatrolState : EnemyBaseState
             entity.StopCoroutine(patrolCoroutine);
             patrolCoroutine = null;
         }
+
+        entity.Agent.isStopped = false;
     }
 
     public override void Update()
@@ -59,6 +61,7 @@ public class EnemyPatrolState : EnemyBaseState
 
             entity.Agent.isStopped = false;
             entity.Agent.SetDestination(targetPoint.position);
+
 
             if(patrolIndex == 0)
             {

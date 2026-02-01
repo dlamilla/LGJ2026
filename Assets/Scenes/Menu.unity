@@ -2356,11 +2356,13 @@ MonoBehaviour:
 
     dlamilla
 
-    xekah - @
+    xekah - @xekah
 
     metsa kate
 
-    rabisani'
+    rabisani
+
+    sebasapa'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f9c128d39026b5247bc0e3aabacc1a27, type: 2}
   m_sharedMaterial: {fileID: 7044808566111916133, guid: f9c128d39026b5247bc0e3aabacc1a27, type: 2}
@@ -2387,8 +2389,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

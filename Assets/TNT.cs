@@ -12,6 +12,8 @@ public class TNT : MonoBehaviour
     SpriteRenderer spriteRenderer;
     CircleCollider2D circleCollider;
     Animator animator;
+
+    Coroutine coroutine;
     private void OnEnable()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -36,14 +38,19 @@ public class TNT : MonoBehaviour
             if (collision.transform.parent.TryGetComponent<Player>(out var player))
             {
                 EventBus.OnPlayerHit();
-                StartCoroutine(FlamesCor());
+
+                if(coroutine != null)
+                {
+                coroutine = StartCoroutine(FlamesCor());
+
+                }
             }
         }
     }
 
     IEnumerator FlamesCor()
     {
-        
+        circleCollider.radius -= 1;
 
         while (flamesDamageTimes < 3)
         {

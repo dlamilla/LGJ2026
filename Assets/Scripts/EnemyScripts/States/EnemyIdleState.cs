@@ -35,10 +35,22 @@ public class EnemyIdleState : EnemyBaseState
 
     public override void Update()
     {
-        if (entity.IsPlayerInRange(60) && !entity.chaseCooldown)
+        if(entity.enemyType == EnemyType.range)
         {
-            stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+            if (entity.IsPlayerInRange(60) && !entity.chaseCooldown)
+            {
+                stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+            }
         }
+
+        if(entity.enemyType == EnemyType.boss)
+        {
+            if (entity.IsPlayerInRange(60))
+            {
+                stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+            }
+        }
+
     }
 
     IEnumerator Cor()

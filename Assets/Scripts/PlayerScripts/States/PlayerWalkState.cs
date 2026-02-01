@@ -37,7 +37,7 @@ public class PlayerWalkState : PlayerBaseState
             stateMachine.ChangeState(playerStateFactory.IdleState);
         }
 
-        if((xInput != 0 || yInput != 0) && Input.GetKey(KeyCode.C))
+        if((xInput != 0 || yInput != 0) && Input.GetKey(KeyCode.LeftShift))
         {
             stateMachine.ChangeState(playerStateFactory.RunState);
         }

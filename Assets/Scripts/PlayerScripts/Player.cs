@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEditorInternal;
@@ -15,7 +16,9 @@ public class Player : MonoBehaviour
     public float hp;
     public float walkSpeed;
     public float runSpeed;
+    public bool isInJaguarPhase;
 
+    private bool alreadyHit;
     public BoxCollider2D swordColl;
     public CinemachineImpulseSource impulseSource;
     Vector3 dirToMouse;
@@ -24,7 +27,7 @@ public class Player : MonoBehaviour
     public Transform swordOrigin;
     public GameObject arrowPrefab;
 
-    [HideInInspector] public TransformationModes transformationMode; 
+    [HideInInspector] public TransformationModes transformationMode;
     public Rigidbody2D rb { get; private set; }
     public Animator animator { get; private set; }
     public StateMachine<Player> StateMachine { get; private set; }
@@ -93,7 +96,6 @@ public class Player : MonoBehaviour
         StateMachine.CurrentState.FixedUpdate();
     }
 
-    
 
     private void OnDrawGizmos()
     {

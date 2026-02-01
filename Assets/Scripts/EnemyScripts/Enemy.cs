@@ -18,14 +18,18 @@ public class Enemy : MonoBehaviour
     public Transform target;
     public EnemyType enemyType;
     public bool isPlayerDeteced;
+    public float knockBackForce;
 
     public bool chaseCooldown;
+    public bool canAttackPlayer;
+    public bool canChargeAttack;
+    public bool canLookAtPlayer;
     public GameObject tntPrefab;
 
     public Transform[] patrolPoints;
 
     public CapsuleCollider2D hurtbox;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb {  get; private set; }
 
     private bool alreadyHitPlayer;
 
@@ -46,7 +50,10 @@ public class Enemy : MonoBehaviour
         EnemyStateFactory = new EnemyStateFactory();
         animator = GetComponent<Animator>();
 
-        //rb = GetComponent<Rigidbody2D>();
+        if(enemyType == EnemyType.boss)
+        {
+            rb = GetComponent<Rigidbody2D>();
+        }
 
         Agent = GetComponent<NavMeshAgent>();
 
@@ -69,10 +76,15 @@ public class Enemy : MonoBehaviour
         Agent.updateRotation = false;
         Agent.updateUpAxis = false;
 
-        foreach(var c in patrolPoints)
+        if(enemyType != EnemyType.boss)
         {
-            c.SetParent(null);
+            foreach (var c in patrolPoints)
+            {
+                c.SetParent(null);
+            }
         }
+
+
     }
 
     // Update is called once per frame
@@ -103,13 +115,13 @@ public class Enemy : MonoBehaviour
     public void OnHit(float damage)
     {
         hp -= damage;
-        StartCoroutine(Cor());
+        StartCoroutine(DamageFeel());
     }
 
-    IEnumerator Cor()
+    IEnumerator DamageFeel()
     {
 
-        transform.position -= dir * 3;
+        transform.position -= dir * knockBackForce;
 
         spriteRenderer.color = Color.red;
 
@@ -122,7 +134,7 @@ public class Enemy : MonoBehaviour
     IEnumerator DoDamage()
     {
 
-        Debug.Log("called");
+        Debug.Log("player got hit");
         alreadyHitPlayer = true;
 
         EventBus.OnPlayerHit();
@@ -134,9 +146,6 @@ public class Enemy : MonoBehaviour
 
     public bool IsPlayerInRange(float range)
     {
-        //Vector2 a = transform.position;
-        //Vector2 b = target.position;
-
         float sqrDist = (target.position -transform.position).sqrMagnitude;
         float sqrRange = range * range;
 

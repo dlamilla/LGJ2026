@@ -40,28 +40,42 @@ public class EnemyBaseState : State<Enemy>
             return;
         }
 
-        if (entity.IsPlayerInRange(50) && entity.enemyType == EnemyType.melee)
+        if (entity.enemyType != EnemyType.boss)
         {
-            entity.isPlayerDeteced = true;
-            stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
-        }
-
-        if(entity.IsPlayerInRange(60) && entity.enemyType == EnemyType.range)
-        {
-            entity.isPlayerDeteced = true;
-        }
-
-        if (entity.isPlayerDeteced)
-        {
-            if(entity.enemyType == EnemyType.range && !entity.chaseCooldown)
+            if (entity.IsPlayerInRange(50) && entity.enemyType == EnemyType.melee)
             {
+                entity.isPlayerDeteced = true;
                 stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
             }
 
-            if(entity.enemyType == EnemyType.melee)
+            if (entity.IsPlayerInRange(60) && entity.enemyType == EnemyType.range)
             {
-            stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+                entity.isPlayerDeteced = true;
+            }
 
+            if (entity.isPlayerDeteced)
+            {
+                if (entity.enemyType == EnemyType.range && !entity.chaseCooldown)
+                {
+                    stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+                }
+
+                if (entity.enemyType == EnemyType.melee)
+                {
+                    stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+
+                }
+            }
+        }
+        else
+        {
+            if (entity.canLookAtPlayer)
+            {
+                Vector3 dirToTarget = entity.target.position - entity.transform.position;
+
+                float angle = Mathf.Atan2(dirToTarget.y, dirToTarget.x) * Mathf.Rad2Deg + 90;
+
+                entity.transform.rotation = Quaternion.Euler(0, 0, angle);
             }
         }
         

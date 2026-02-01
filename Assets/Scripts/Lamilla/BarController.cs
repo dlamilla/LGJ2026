@@ -49,33 +49,33 @@ public class BarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            StartCoroutine(ChangeValueGreenFull()); 
-        }
+        //if(Input.GetKeyDown(KeyCode.G))
+        //{
+        //    StartCoroutine(ChangeValueGreenFull()); 
+        //}
 
-        if(Input.GetKeyDown(KeyCode.H))
-        {
-            AddGreen(1);
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            RemoveRed(1);
-        }
+        //if(Input.GetKeyDown(KeyCode.H))
+        //{
+        //    AddGreen(1);
+        //}
+        //if (Input.GetKeyDown(KeyCode.J))
+        //{
+        //    RemoveRed(1);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            AddRed(1);
-        }
-        if(Input.GetKeyDown(KeyCode.T))
-        {
-            ChangeColor();
-        }
+        //if (Input.GetKeyDown(KeyCode.K))
+        //{
+        //    AddRed(1);
+        //}
+        //if(Input.GetKeyDown(KeyCode.T))
+        //{
+        //    ChangeColor();
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            ChangeColorBack();
-        }
+        //if (Input.GetKeyDown(KeyCode.Y))
+        //{
+        //    ChangeColorBack();
+        //}
     }
 
     public void AddGreen(int amount)

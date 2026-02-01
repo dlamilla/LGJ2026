@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: aef53d29587051c428511fc07f902a38
+guid: 750a1e13947db6b4d843054f1c7639e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8870405029611245321
-    second: TRONCOS_0
+      213: -1673732733077124514
+    second: trees_0
   - first:
-      213: 5822668520418115567
-    second: TRONCOS_1
+      213: 3611188691014843535
+    second: trees_1
   - first:
-      213: 2352968805027180553
-    second: TRONCOS_2
+      213: 2249915519335348110
+    second: trees_2
+  - first:
+      213: 5223556475179290604
+    second: trees_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TRONCOS_0
+      name: trees_0
       rect:
         serializedVersion: 2
         x: 0
@@ -147,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90f01d380620a1b70800000000000000
-      internalID: 8870405029611245321
+      spriteID: e5a8ef372f4b5c8e0800000000000000
+      internalID: -1673732733077124514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TRONCOS_1
+      name: trees_1
       rect:
         serializedVersion: 2
         x: 256
@@ -169,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: feffe546b264ec050800000000000000
-      internalID: 5822668520418115567
+      spriteID: f8cf8d84bf48d1230800000000000000
+      internalID: 3611188691014843535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TRONCOS_2
+      name: trees_2
       rect:
         serializedVersion: 2
         x: 512
@@ -191,8 +194,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 900783f59ac67a020800000000000000
-      internalID: 2352968805027180553
+      spriteID: e873f988e3e493f10800000000000000
+      internalID: 2249915519335348110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trees_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefc04740fccd7840800000000000000
+      internalID: 5223556475179290604
       vertices: []
       indices: 
       edges: []
@@ -201,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1214e2082e2ba3541924bf0d3d324492
+    spriteID: 99357e1f547c84549bc8ee4f1d679654
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TRONCOS_0: 8870405029611245321
-      TRONCOS_1: 5822668520418115567
-      TRONCOS_2: 2352968805027180553
+      trees_0: -1673732733077124514
+      trees_1: 3611188691014843535
+      trees_2: 2249915519335348110
+      trees_3: 5223556475179290604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

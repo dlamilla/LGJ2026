@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: aef53d29587051c428511fc07f902a38
+guid: 81134041352ce7c4c8c7c518c71f3130
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8870405029611245321
-    second: TRONCOS_0
+      213: -8972160590304115327
+    second: DANO_1-Sheet_0
   - first:
-      213: 5822668520418115567
-    second: TRONCOS_1
+      213: -7034298501141586050
+    second: DANO_1-Sheet_1
   - first:
-      213: 2352968805027180553
-    second: TRONCOS_2
+      213: -6363171678587183198
+    second: DANO_1-Sheet_2
+  - first:
+      213: -3632020263478714227
+    second: DANO_1-Sheet_3
+  - first:
+      213: -7221981012879628877
+    second: DANO_1-Sheet_4
+  - first:
+      213: -1198134494577449222
+    second: DANO_1-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,51 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TRONCOS_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 90f01d380620a1b70800000000000000
-      internalID: 8870405029611245321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TRONCOS_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: feffe546b264ec050800000000000000
-      internalID: 5822668520418115567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TRONCOS_2
+      name: DANO_1-Sheet_2
       rect:
         serializedVersion: 2
         x: 512
@@ -191,8 +156,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 900783f59ac67a020800000000000000
-      internalID: 2352968805027180553
+      spriteID: 2af1cf4621971b7a0800000000000000
+      internalID: -6363171678587183198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DANO_1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680be18035b00264ab447c063dbee903
+      internalID: -8972160590304115327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DANO_1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a463acaa37e654e9abcd4b2d00e7d5
+      internalID: -7034298501141586050
       vertices: []
       indices: 
       edges: []
@@ -201,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1214e2082e2ba3541924bf0d3d324492
+    spriteID: 0c902115fb7b7c54b936bc67f7b40bd7
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +220,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TRONCOS_0: 8870405029611245321
-      TRONCOS_1: 5822668520418115567
-      TRONCOS_2: 2352968805027180553
+      DANO_1-Sheet_0: -8972160590304115327
+      DANO_1-Sheet_1: -7034298501141586050
+      DANO_1-Sheet_2: -6363171678587183198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

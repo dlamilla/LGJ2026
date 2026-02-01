@@ -14,8 +14,10 @@ public class Enemy : MonoBehaviour
 {
     public float hp;
     public float speed;
+    public float distanceToAttack;
     public Transform target;
     public EnemyType enemyType;
+    public bool isPlayerDeteced;
 
     public CapsuleCollider2D hurtbox;
     private Rigidbody2D rb;
@@ -49,7 +51,16 @@ public class Enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StateMachine.Initialize(EnemyStateFactory.EnemyPatrolState);
+        if(enemyType == EnemyType.boss)
+        {
+            StateMachine.Initialize(EnemyStateFactory.EnemyIdleState);
+
+        }
+        else
+        {
+            StateMachine.Initialize(EnemyStateFactory.EnemyPatrolState);
+        }
+        
         Agent.updateRotation = false;
         Agent.updateUpAxis = false;
     }
@@ -120,5 +131,16 @@ public class Enemy : MonoBehaviour
         float sqrRange = range * range;
 
         return sqrDist <= sqrRange;
+    }
+
+    public bool InRangeToAttack(float range)
+    {
+        Vector3 dirToTarget = target.position - transform.position;
+
+        float sqrDistance = dirToTarget.sqrMagnitude;
+
+        float sqrRange = range * range;
+
+        return sqrDistance <= sqrRange;
     }
 }

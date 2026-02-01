@@ -29,6 +29,11 @@ public class EnemyChaseState : EnemyBaseState
     {
         base.Update();
 
+        if(entity.enemyType == EnemyType.range && entity.InRangeToAttack(entity.distanceToAttack))
+        {
+            stateMachine.ChangeState(enemyStateFactory.EnemyAttackState);
+        }
+
         entity.Agent.SetDestination(entity.target.position);
 
         animator.SetFloat("moveX", entity.dir.x);

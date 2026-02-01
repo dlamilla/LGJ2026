@@ -42,7 +42,7 @@ public class PlayerBaseState : State<Player>
     public override void Update()
     {
 
-        Debug.Log($"im in {stateMachine.CurrentState}");
+        //Debug.Log($"im in {stateMachine.CurrentState}");
 
         if (canMove)
         {

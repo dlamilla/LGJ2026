@@ -1,9 +1,16 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class EnemyBaseState : State<Enemy>
 {
     protected Animator animator;
     protected EnemyStateFactory enemyStateFactory;
+
+    protected Vector3 lastTargetPosition;
+
+    protected bool chaseCooldown;
+
+    private float updateTime;
     public EnemyBaseState(Enemy entity, EnemyStateFactory enemyStateFactory, StateMachine<Enemy> stateMachine) : base(entity, enemyStateFactory, stateMachine)
     {
         animator = entity.animator;
@@ -27,15 +34,45 @@ public class EnemyBaseState : State<Enemy>
 
     public override void Update()
     {
+        Debug.Log($"im in {stateMachine.CurrentState}");
+
         if (entity.hp <= 0)
         {
             stateMachine.ChangeState(enemyStateFactory.EnemyDeathState);
             return;
         }
 
+        if(Time.time >= updateTime + .2f)
+        {
+            lastTargetPosition = entity.target.position;
+            updateTime = Time.time;
+            //Debug.Log("called");
+        }
+
         if (entity.IsPlayerInRange(50) && entity.enemyType == EnemyType.melee)
         {
+            entity.isPlayerDeteced = true;
             stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
         }
+
+        if(entity.IsPlayerInRange(60) && entity.enemyType == EnemyType.range)
+        {
+            entity.isPlayerDeteced = true;
+        }
+
+        if (entity.isPlayerDeteced)
+        {
+            if(entity.enemyType == EnemyType.range && !chaseCooldown)
+            {
+                stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+            }
+
+            if(entity.enemyType == EnemyType.melee)
+            {
+            stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
+
+            }
+        }
+        
     }
 }

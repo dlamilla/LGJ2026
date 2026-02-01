@@ -1,19 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuOoptions : MonoBehaviour
 {
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Slider volumeSlider;
+    public float sliderValue;
     void Start()
     {
-        
+        volumeSlider.value = PlayerPrefs.GetFloat("volumeAudio", 0.5f);
+        AudioListener.volume = volumeSlider.value;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeSlider(float valor)
     {
-        
+        sliderValue = valor;
+        PlayerPrefs.SetFloat("volumeAudio", sliderValue);
+        AudioListener.volume = sliderValue;
     }
 
     public void ChangeScene(int index)

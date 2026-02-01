@@ -43,7 +43,7 @@ public class EnemyIdleState : EnemyBaseState
 
         if(entity.enemyType == EnemyType.range)
         {
-            if (entity.IsPlayerInRange(60) && !entity.chaseCooldown)
+            if (entity.IsPlayerInRange(entity.visionDistance) && !entity.chaseCooldown)
             {
                 stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
             }
@@ -51,7 +51,7 @@ public class EnemyIdleState : EnemyBaseState
 
         if(entity.enemyType == EnemyType.boss)
         {
-            if (entity.IsPlayerInRange(60))
+            if (entity.IsPlayerInRange(entity.visionDistance))
             {
                 stateMachine.ChangeState(enemyStateFactory.EnemyChaseState);
             }

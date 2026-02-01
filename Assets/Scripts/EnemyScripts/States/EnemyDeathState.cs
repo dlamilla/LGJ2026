@@ -21,7 +21,10 @@ public class EnemyDeathState : EnemyBaseState
         entity.Agent.velocity = Vector3.zero;
         entity.Agent.isStopped = true;
 
-        entity.StartCoroutine(CorDeath());
+        if(entity.enemyType != EnemyType.boss)
+        {
+            entity.StartCoroutine(CorDeath());
+        }
         animator.Play("Death");
     }
 
@@ -37,7 +40,13 @@ public class EnemyDeathState : EnemyBaseState
 
     public override void Update()
     {
-
+        if(entity.enemyType == EnemyType.boss)
+        {
+            if (entity.animatorStateInfo.normalizedTime >= 1)
+            {
+                Object.Destroy(entity.gameObject);
+            }
+        }
     }
 
     IEnumerator CorDeath()

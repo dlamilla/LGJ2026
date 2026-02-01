@@ -2903,7 +2903,7 @@ Transform:
   m_GameObject: {fileID: 338567693}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.7, y: 9.18, z: -10}
+  m_LocalPosition: {x: 14, y: 6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3063,6 +3063,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 60
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -3480,6 +3481,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 0
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -3775,6 +3777,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 0
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -4254,7 +4257,7 @@ Transform:
   m_GameObject: {fileID: 467388768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.7, y: 9.18, z: -10}
+  m_LocalPosition: {x: 14, y: 6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4481,6 +4484,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 60
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -5269,6 +5273,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 60
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -6602,6 +6607,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 0
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -8278,6 +8284,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 0
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -20583,6 +20590,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 0
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -21724,6 +21732,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 60
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -24931,6 +24940,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 60
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -26217,6 +26227,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 0
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -75759,6 +75770,7 @@ MonoBehaviour:
   enemyType: 1
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 0
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -76234,7 +76246,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.25
-  m_Speed: 12
+  m_Speed: 14
   m_Acceleration: 100
   avoidancePriority: 50
   m_AngularSpeed: 80000
@@ -76258,13 +76270,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6674db4692d2a8c40ab455e623bc46da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 1000
+  hp: 100
   speed: 11
   distanceToAttack: 14
   target: {fileID: 2108538987}
   enemyType: 3
   isPlayerDeteced: 0
   knockBackForce: 0
+  visionDistance: 80
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -76364,7 +76377,7 @@ Transform:
   m_GameObject: {fileID: 1879730969}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 231.1, y: 195.94, z: 0}
+  m_LocalPosition: {x: 159.4, y: 209.9, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -77520,6 +77533,7 @@ MonoBehaviour:
   enemyType: 2
   isPlayerDeteced: 0
   knockBackForce: 3
+  visionDistance: 60
   isDead: 0
   chaseCooldown: 0
   canAttackPlayer: 0
@@ -78240,7 +78254,7 @@ Transform:
   m_GameObject: {fileID: 2108538980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.7, y: 9.18, z: 0}
+  m_LocalPosition: {x: 14, y: 6, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:

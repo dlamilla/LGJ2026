@@ -1,0 +1,881 @@
+fileFormatVersion: 2
+guid: b0bc236b34e748842b9af977a1f726bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4922095810640643096
+    second: tractor muerte_0
+  - first:
+      213: 8473210411466974221
+    second: tractor muerte_1
+  - first:
+      213: 2613856362703495024
+    second: tractor muerte_2
+  - first:
+      213: 2055417415789470323
+    second: tractor muerte_3
+  - first:
+      213: -6261378283814394173
+    second: tractor muerte_4
+  - first:
+      213: -8271276444693674079
+    second: tractor muerte_5
+  - first:
+      213: -606890073916153110
+    second: tractor muerte_6
+  - first:
+      213: 496182777681609959
+    second: tractor muerte_7
+  - first:
+      213: 5913406040185048079
+    second: tractor muerte_8
+  - first:
+      213: -6425115659935705810
+    second: tractor muerte_9
+  - first:
+      213: -7961425147251153929
+    second: tractor muerte_10
+  - first:
+      213: -4000650793153088812
+    second: tractor muerte_11
+  - first:
+      213: -8789484618137679201
+    second: tractor muerte_12
+  - first:
+      213: -7700961101561677575
+    second: tractor muerte_13
+  - first:
+      213: 6525686814947577065
+    second: tractor muerte_14
+  - first:
+      213: 1840824487816278090
+    second: tractor muerte_15
+  - first:
+      213: 3397231498040640697
+    second: tractor muerte_16
+  - first:
+      213: -8157749261693644753
+    second: tractor muerte_17
+  - first:
+      213: 8312029868731859699
+    second: tractor muerte_18
+  - first:
+      213: -7215966397870871744
+    second: tractor muerte_19
+  - first:
+      213: 7173772182418014748
+    second: tractor muerte_20
+  - first:
+      213: -6040535498656194017
+    second: tractor muerte_21
+  - first:
+      213: 2913448067781304144
+    second: tractor muerte_22
+  - first:
+      213: -4725037017365942620
+    second: tractor muerte_23
+  - first:
+      213: 4316674307596771542
+    second: tractor muerte_24
+  - first:
+      213: 6618705429543741556
+    second: tractor muerte_25
+  - first:
+      213: 7413364324667054829
+    second: tractor muerte_26
+  - first:
+      213: -4756757990199880079
+    second: tractor muerte_27
+  - first:
+      213: 4899727532668845268
+    second: tractor muerte_28
+  - first:
+      213: 225278384470554423
+    second: tractor muerte_29
+  - first:
+      213: -3448439591215121865
+    second: tractor muerte_30
+  - first:
+      213: -8800389858072182330
+    second: tractor muerte_31
+  - first:
+      213: -4688833166623033273
+    second: tractor muerte_32
+  - first:
+      213: -6005483549251380806
+    second: tractor muerte_33
+  - first:
+      213: 1104943853252307926
+    second: tractor muerte_34
+  - first:
+      213: -7155710587884532739
+    second: tractor muerte_35
+  - first:
+      213: 1426639365565675396
+    second: tractor muerte_36
+  - first:
+      213: 1357028357984990528
+    second: tractor muerte_37
+  - first:
+      213: 8363248261982033144
+    second: tractor muerte_38
+  - first:
+      213: -5546716513593328649
+    second: tractor muerte_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tractor muerte_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8148ca7bf0cce4440800000000000000
+      internalID: 4922095810640643096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2100
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0461aae9f3e69570800000000000000
+      internalID: 8473210411466974221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2100
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f16d85388464420800000000000000
+      internalID: 2613856362703495024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2100
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3726845ef3f468c10800000000000000
+      internalID: 2055417415789470323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2100
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6e5e400ad1b19a0800000000000000
+      internalID: -6261378283814394173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2100
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a74afa85e5863d80800000000000000
+      internalID: -8271276444693674079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2100
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae2648671b4e397f0800000000000000
+      internalID: -606890073916153110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4016f7b9bc2e600800000000000000
+      internalID: 496182777681609959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_8
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1400
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c01e58673a01250800000000000000
+      internalID: 5913406040185048079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1400
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e259bb8595765d6a0800000000000000
+      internalID: -6425115659935705810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_10
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1400
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3ab309206538190800000000000000
+      internalID: -7961425147251153929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_11
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1400
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2b9bbcc45da78c0800000000000000
+      internalID: -4000650793153088812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_12
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1400
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ac429fe4a750680800000000000000
+      internalID: -8789484618137679201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_13
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1400
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8b058fda0b02590800000000000000
+      internalID: -7700961101561677575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec86686595ef8a50800000000000000
+      internalID: 6525686814947577065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_15
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 700
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40312a5e1ceb8910800000000000000
+      internalID: 1840824487816278090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_16
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 700
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b40b745c04652f20800000000000000
+      internalID: 3397231498040640697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 700
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f209b02a44ad9ce80800000000000000
+      internalID: -8157749261693644753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 700
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2033860234a5370800000000000000
+      internalID: 8312029868731859699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_19
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 700
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b60cffaccbbdb90800000000000000
+      internalID: -7215966397870871744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_20
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 700
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12ca98aacb5e8360800000000000000
+      internalID: 7173772182418014748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12e575d7f4bb2ca0800000000000000
+      internalID: -6040535498656194017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_22
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f17afd495ae6820800000000000000
+      internalID: 2913448067781304144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_23
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aee455fddb4d6eb0800000000000000
+      internalID: -4725037017365942620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_24
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d06c5b7968e7eb30800000000000000
+      internalID: 4316674307596771542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_25
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47867e0558d5adb50800000000000000
+      internalID: 6618705429543741556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_26
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 0
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea555a539f81e660800000000000000
+      internalID: 7413364324667054829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tractor muerte_27
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17692af6fc99cfdb0800000000000000
+      internalID: -4756757990199880079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: feb957cf7c3cd0c4d8c2258901155069
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tractor muerte_0: 4922095810640643096
+      tractor muerte_1: 8473210411466974221
+      tractor muerte_10: -7961425147251153929
+      tractor muerte_11: -4000650793153088812
+      tractor muerte_12: -8789484618137679201
+      tractor muerte_13: -7700961101561677575
+      tractor muerte_14: 6525686814947577065
+      tractor muerte_15: 1840824487816278090
+      tractor muerte_16: 3397231498040640697
+      tractor muerte_17: -8157749261693644753
+      tractor muerte_18: 8312029868731859699
+      tractor muerte_19: -7215966397870871744
+      tractor muerte_2: 2613856362703495024
+      tractor muerte_20: 7173772182418014748
+      tractor muerte_21: -6040535498656194017
+      tractor muerte_22: 2913448067781304144
+      tractor muerte_23: -4725037017365942620
+      tractor muerte_24: 4316674307596771542
+      tractor muerte_25: 6618705429543741556
+      tractor muerte_26: 7413364324667054829
+      tractor muerte_27: -4756757990199880079
+      tractor muerte_3: 2055417415789470323
+      tractor muerte_4: -6261378283814394173
+      tractor muerte_5: -8271276444693674079
+      tractor muerte_6: -606890073916153110
+      tractor muerte_7: 496182777681609959
+      tractor muerte_8: 5913406040185048079
+      tractor muerte_9: -6425115659935705810
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

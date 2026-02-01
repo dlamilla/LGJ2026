@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
     public EnemyType enemyType;
     public bool isPlayerDeteced;
     public float knockBackForce;
+    public float visionDistance;
 
     public bool isDead;
 
@@ -40,6 +41,8 @@ public class Enemy : MonoBehaviour
     private CapsuleCollider2D hitbox;
     [Header("Image")]
     public SpriteRenderer spriteRenderer;
+
+    public AnimatorStateInfo animatorStateInfo;
 
     public Animator animator;
     public EnemyStateFactory EnemyStateFactory {  get; private set; }
@@ -77,6 +80,8 @@ public class Enemy : MonoBehaviour
         
         Agent.updateRotation = false;
         Agent.updateUpAxis = false;
+
+        animatorStateInfo = animator.GetCurrentAnimatorStateInfo(0);
 
         if(enemyType != EnemyType.boss)
         {

@@ -35,6 +35,12 @@ public class EnemyIdleState : EnemyBaseState
 
     public override void Update()
     {
+
+        if(entity.hp <= 0)
+        {
+            stateMachine.ChangeState(enemyStateFactory.EnemyDeathState);
+        }
+
         if(entity.enemyType == EnemyType.range)
         {
             if (entity.IsPlayerInRange(60) && !entity.chaseCooldown)

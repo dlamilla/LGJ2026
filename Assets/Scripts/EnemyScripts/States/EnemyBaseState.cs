@@ -38,6 +38,12 @@ public class EnemyBaseState : State<Enemy>
 
         if (entity.isDead) return;
 
+        if (entity.hp <= 0)
+        {
+            stateMachine.ChangeState(enemyStateFactory.EnemyDeathState);
+            return;
+        }
+
 
         if (entity.enemyType != EnemyType.boss)
         {
@@ -78,11 +84,7 @@ public class EnemyBaseState : State<Enemy>
             }
         }
 
-        if (entity.hp <= 0 && !inDeathState)
-        {
-            stateMachine.ChangeState(enemyStateFactory.EnemyDeathState);
-            return;
-        }
+
 
     }
 }
